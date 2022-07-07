@@ -1,3 +1,10 @@
+# Dynamic Partition Simulator
+
+This is a worst-fit dynamic partition memory allocation simulator that approximates some of the functionality of malloc() and free() in the standard C library. The input to the simulator will be a page size (a positive integer) and list of allocation and deallocation requests. The simulator will
+simulate processing all requests and then compute some statistics. Throughout the simulation the program will maintain an ordered list of dynamic partitions. Some
+partitions will be marked as occupied, the rest will be marked as free. Occupied partitions will have a numeric tag attached to it. Each partition will also contain its size in bytes, and the starting address. The starting address of the first partition should be 0. The simulator will manipulate this list of partitions as
+a result of processing requests. Allocation requests will be processed by finding the most appropriately sized partition and then allocating a memory from it. Deallocation requests will free up any relevant occupied partitions, and also merging any adjacent free partitions.
+
 To compile all code, type:
 ```
 $ make
