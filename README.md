@@ -11,7 +11,7 @@ $ make
 ```
 
 ---
-# Test files:
+## Test files:
 ```
 $ ./memsim 123 < test1.txt
 pages requested:                58
